@@ -1,20 +1,10 @@
 html, body {
     height: 100%;
     margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 
-body {
-    -ms-overflow-style: none; 
-    scrollbar-width: none;     
-}
-
-body::-webkit-scrollbar {
-    display: none;
-}
 
 body {
     font-family: 'Arial', sans-serif; 
@@ -23,46 +13,41 @@ body {
     flex: 1;
 }
 
+
 main {
     flex: 1;
-    flex-grow: 1;
-    overflow-y: auto;
-    padding: 1rem;
+    padding: 2rem;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto;      
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    box-sizing: border-box;
-    padding-top: 120px;
+    align-items: flex-start;   
+    text-align: left;   
 }
+
 
 header {
     background: linear-gradient(135deg, #9b59b6, #3498db); 
     padding: 2rem 1rem;
     text-align: center;
     border-radius: 10px;
-    position: relative;
-    z-index: 10;
 }
 
 header h1 {
     color: white;
-    text-shadow: 0 0 5px #fff, 0 0 15px #9b59b6, 0 0 20px #3498db;
+    text-shadow: 0 0 5px #fff, 0 0 15px #9b59b6, 0 0 20px #3498db; 
 }
 
 header p {
     color: #f4f4f4; 
 }
 
+
 nav {
     background: linear-gradient(135deg, #8e44ad, #2980b9); 
     text-align: center;
     padding: 1rem;
     border-radius: 5px;
-    position: relative;
-    z-index: 9; 
 }
 
 nav a {
@@ -70,7 +55,7 @@ nav a {
     margin: 0 1rem;
     text-decoration: none;
     font-weight: bold;
-    text-shadow: 0 0 5px #fff, 0 0 10px #3498db;
+    text-shadow: 0 0 5px #fff, 0 0 10px #3498db; 
 }
 
 nav a:hover {
@@ -82,11 +67,12 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
-    font-size: 0.9rem;
-    position: relative;
     margin-top: auto;
-    border-radius: 5px;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
     width: 100%;
+    border-radius: 5px;
 }
 
 .footer-links {
@@ -125,17 +111,19 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.settings-btn:hover {
+  }
+  
+  .settings-btn:hover {
     background-color: rgba(0, 0, 0, 0.9);
-}
+  }
+  
 
-.settings-dropdown {
+  .settings-dropdown {
     display: none;
     position: fixed;
     top: 75px;
     right: 20px;
+    transform: translateX(-50%);
     width: 260px;
     background-color: #1e1e1e;
     color: #ffffff;
@@ -143,22 +131,26 @@ footer {
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     z-index: 1001;
-}
-
-.settings-dropdown.show {
+    font-family: Arial, sans-serif;
+  }
+  
+ 
+  .settings-dropdown.show {
     display: block;
-}
+  }
+  
 
-.settings-dropdown label {
+  .settings-dropdown label {
     display: block;
     margin-bottom: 6px;
     font-size: 14px;
     font-weight: 500;
     margin-top: 15px;
-}
+  }
+  
 
-.settings-dropdown select,
-.settings-dropdown input[type="color"] {
+  .settings-dropdown select,
+  .settings-dropdown input[type="color"] {
     width: 100%;
     padding: 8px 10px;
     margin-top: 4px;
@@ -169,34 +161,35 @@ footer {
     font-size: 14px;
     outline: none;
     appearance: none;
-}
-
-.settings-dropdown select:hover,
-.settings-dropdown input[type="color"]:hover {
+  }
+  
+  .settings-dropdown select:hover,
+  .settings-dropdown input[type="color"]:hover {
     border-color: #666;
-}
+  }
+  
 
-.settings-dropdown select {
+  .settings-dropdown select {
     background-image: linear-gradient(45deg, transparent 50%, #fff 50%),
       linear-gradient(135deg, #fff 50%, transparent 50%);
     background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
     background-size: 5px 5px, 5px 5px;
     background-repeat: no-repeat;
-}
+  }
 
-.grid-layout main {
+  .grid-layout main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-}
-
-.centered-layout main {
+  }
+  
+  .centered-layout main {
     display: block;
-}
-
-.centered-layout main > * {
+  }
+  
+  .centered-layout main > * {
     margin-bottom: 20px;
-}
+  }
 
 @media (max-width: 768px) {
     main {
