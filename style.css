@@ -13,6 +13,9 @@ body {
     color: #e0e0e0;
     flex: 1;
     overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
@@ -22,8 +25,9 @@ main {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     text-align: left;
+    width: 80%;
 }
 
 header {
@@ -64,12 +68,12 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
-    margin-top: auto;
     font-size: 0.9rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    position: relative;  
+    margin-top: auto;
     border-radius: 5px;
+    width: 100%;
+    word-wrap: break-word; 
 }
 
 .footer-links {
@@ -108,6 +112,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateX(0);
 }
 
 .settings-btn:hover {
@@ -119,7 +124,6 @@ footer {
     position: fixed;
     top: 75px;
     right: 20px;
-    transform: translateX(-50%);
     width: 260px;
     background-color: #1e1e1e;
     color: #ffffff;
@@ -128,6 +132,7 @@ footer {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     z-index: 1001;
     font-family: Arial, sans-serif;
+    max-width: calc(100% - 40px); 
 }
 
 .settings-dropdown.show {
@@ -186,6 +191,7 @@ footer {
 @media (max-width: 768px) {
     main {
         padding: 1rem;
+        width: 90%;
     }
 
     nav {
@@ -199,6 +205,12 @@ footer {
 
     header, nav, footer {
         padding: 1rem;
+    }
+
+    footer {
+        font-size: 1rem;
+        text-align: center;
+        position: relative;
     }
 
     .grid-layout main {
