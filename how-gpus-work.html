@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How GPUs Work</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="settings-btn" aria-label="Open Settings">
+    <i class="fas fa-cogs"></i> 
+  </div>
+
+  <div class="settings-dropdown">
+  
+    <label for="font-select">Select Font Family:</label>
+    <select id="font-select">
+      <option value="Arial">Arial</option>
+      <option value="Verdana">Verdana</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Tahoma">Tahoma</option>
+      <option value="'Trebuchet MS'">Trebuchet MS</option>
+      <option value="'Courier New'">Courier New</option>
+      <option value="'Lucida Sans Unicode'">Lucida Sans Unicode</option>
+      <option value="'Segoe UI'">Segoe UI</option>
+      <option value="'Roboto', sans-serif">Roboto</option>
+      <option value="'Open Sans', sans-serif">Open Sans</option>
+    </select>
+  
+   
+    <label for="font-size-select">Select Font Size:</label>
+    <select id="font-size-select">
+      <option value="12px">Very Small</option>
+      <option value="14px">Small</option>
+      <option value="16px">Medium</option>
+      <option value="18px">Large</option>
+      <option value="20px">Very Large</option>
+      <option value="24px">Extra Large</option>
+    </select>
+  
+    
+    <label for="background-color-select">Background Color:</label>
+    <select id="background-color-select">
+      <option value="#121212">Dark Gray</option>
+      <option value="#1e1e2f">Midnight Blue</option>
+      <option value="#2c3e50">Blue Gray</option>
+      <option value="#ffffff">White</option>
+      <option value="#f0f0f0">Light Gray</option>
+      <option value="#0d1117">GitHub Dark</option>
+    </select>
+  
+    
+    <label for="text-color-select">Text Color:</label>
+    <select id="text-color-select">
+      <option value="#ffffff">White</option>
+      <option value="#e0e0e0">Light Gray</option>
+      <option value="#000000">Black</option>
+      <option value="#f39c12">Golden Yellow</option>
+      <option value="#1abc9c">Turquoise</option>
+      <option value="#9b59b6">Purple</option>
+    </select>        
+  </div>
+  
+  <header>
+    <h1>How GPUs Work</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="how-gpus-work.html">How GPUs Work</a>
+    <a href="environmental-impact.html">Environmental Impact</a>
+    <a href="brand-comparison.html">Brand Comparison</a>
+    <a href="tips-for-gamers.html">Tips for Gamers</a>
+    <a href="future-outlook.html">Future Outlook</a>
+  </nav>
+  
+  <main>
+    <h2>What is a GPU?</h2>
+    <p>
+      A Graphics Processing Unit (GPU) is a highly specialized electronic circuit designed to accelerate the creation and rendering of images, videos, and animations. Originally developed to offload demanding visual computations from the Central Processing Unit (CPU), GPUs have become an integral component in modern computing—not only for gaming but also for a wide range of computationally intensive tasks.
+    </p>
+    <p>
+      Unlike traditional processors, which handle a few threads at high speed, GPUs are optimized for executing thousands of smaller tasks simultaneously. This parallel architecture allows GPUs to render complex 3D scenes in real-time, simulate physics, and apply lighting and shading effects to create lifelike virtual environments. From everyday user interfaces to cinematic special effects, GPUs play a crucial role in the visual experience of modern devices.
+    </p>
+  
+    <h2>GPU vs. CPU</h2>
+    <p>
+      To understand the value of a GPU, it is essential to differentiate it from the CPU. A Central Processing Unit (CPU) is designed to handle general-purpose tasks and is capable of quickly switching between multiple operations. It typically consists of a few cores (usually between 4 and 16 in consumer-grade systems) that can handle highly complex, sequential tasks efficiently.
+    </p>
+    <p>
+      On the other hand, a GPU can contain hundreds to thousands of smaller cores, each designed to perform simple calculations at high speed across large datasets. This makes GPUs far more efficient for operations that require massive parallelism. For example, in a game, while the CPU handles game logic and user input, the GPU is responsible for processing every pixel on the screen, managing lighting, shadows, reflections, and animations in real time.
+    </p>
+    <p>
+      In recent years, this difference in architecture has made GPUs increasingly popular in fields beyond graphics, such as scientific computing, artificial intelligence, data mining, and machine learning. Tasks like training neural networks or processing huge volumes of scientific data can be accelerated dramatically when run on GPUs rather than CPUs.
+    </p>
+  
+    <h2>Components of a GPU</h2>
+    <p>
+      A modern GPU consists of several essential components, each contributing to its overall performance and efficiency in rendering and computation.
+    </p>
+    <ul>
+      <li>
+        <strong>Cores (CUDA Cores or Stream Processors):</strong> These are the fundamental processing units inside the GPU. While a CPU might have up to 16 cores, a GPU can include thousands. These cores work together to perform large numbers of calculations simultaneously, which is essential for rendering pixels and complex visual effects.
+      </li>
+      <li>
+        <strong>VRAM (Video RAM):</strong> This is the dedicated memory used by the GPU to store graphical data, such as textures, models, shaders, and framebuffers. High-end GPUs often come with 8 GB to 24 GB or more of VRAM, allowing them to handle high-resolution textures and real-time rendering in 4K or even 8K.
+      </li>
+      <li>
+        <strong>Shaders:</strong> Shaders are programmable units that determine how graphics are rendered. They can be used to calculate lighting, shadows, surface textures, and more. There are different types of shaders, including vertex shaders, pixel (or fragment) shaders, and geometry shaders. These small programs play a major role in how realistic and immersive a visual experience can be.
+      </li>
+      <li>
+        <strong>Cooling System:</strong> Since GPUs can generate a significant amount of heat, they typically come with robust cooling solutions such as fans, heat sinks, or even liquid cooling in high-performance setups. Efficient cooling is essential for maintaining performance and prolonging the hardware's lifespan.
+      </li>
+      <li>
+        <strong>Power Connectors and PCB:</strong> A GPU draws power from the motherboard and, in most cases, directly from the PSU (power supply unit). The printed circuit board (PCB) interconnects all components and handles data flow and electrical power distribution.
+      </li>
+    </ul>
+  
+    <h2>Modern Usage Beyond Gaming</h2>
+    <p>
+      While GPUs are often associated with gaming, their use has expanded dramatically in the last decade. Today, they are vital tools in a wide range of industries and research fields:
+    </p>
+    <ul>
+      <li>
+        <strong>Cryptocurrency Mining:</strong> Many cryptocurrencies, such as Ethereum (before its shift to Proof of Stake), rely on complex mathematical calculations for mining. GPUs excel in this domain due to their ability to perform repetitive hashing functions efficiently.
+      </li>
+      <li>
+        <strong>Machine Learning & AI:</strong> Deep learning frameworks like TensorFlow and PyTorch are optimized for GPU acceleration. Training models on image recognition, natural language processing, and generative AI can be exponentially faster on a GPU than on a CPU.
+      </li>
+      <li>
+        <strong>Scientific Research:</strong> From simulating molecular structures to analyzing astronomical data, researchers utilize GPUs to process vast amounts of data in parallel, reducing computation time for critical simulations and analysis.
+      </li>
+      <li>
+        <strong>Professional Rendering & Video Editing:</strong> In industries such as animation, architecture, and film, rendering high-resolution images and videos is a computationally demanding process. GPUs are essential for real-time previews and high-speed rendering pipelines in software like Adobe Premiere, DaVinci Resolve, and Blender.
+      </li>
+    </ul>
+    <p>
+      The increasing dependence on GPUs in so many areas has elevated their importance in computing. However, this also raises questions about energy consumption, resource usage, and sustainability—especially when considering the environmental impact of producing and powering millions of units globally.
+    </p>
+    <p>
+      Understanding the GPU's role in both entertainment and innovation is essential not only for appreciating its power but also for addressing its sustainability challenges in a rapidly evolving tech-driven world.
+    </p>
+  </main>
+  <footer>
+    &copy; 2025 Seminar Project – All rights reserved. Maurice Oehrl, Phillip E. Bock and Samuel Möller.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brand Comparison</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="settings-btn" aria-label="Open Settings">
+    <i class="fas fa-cogs"></i> 
+  </div>
+
+  <div class="settings-dropdown">
+  
+    <label for="font-select">Select Font Family:</label>
+    <select id="font-select">
+      <option value="Arial">Arial</option>
+      <option value="Verdana">Verdana</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Tahoma">Tahoma</option>
+      <option value="'Trebuchet MS'">Trebuchet MS</option>
+      <option value="'Courier New'">Courier New</option>
+      <option value="'Lucida Sans Unicode'">Lucida Sans Unicode</option>
+      <option value="'Segoe UI'">Segoe UI</option>
+      <option value="'Roboto', sans-serif">Roboto</option>
+      <option value="'Open Sans', sans-serif">Open Sans</option>
+    </select>
+  
+   
+    <label for="font-size-select">Select Font Size:</label>
+    <select id="font-size-select">
+      <option value="12px">Very Small</option>
+      <option value="14px">Small</option>
+      <option value="16px">Medium</option>
+      <option value="18px">Large</option>
+      <option value="20px">Very Large</option>
+      <option value="24px">Extra Large</option>
+    </select>
+  
+    
+    <label for="background-color-select">Background Color:</label>
+    <select id="background-color-select">
+      <option value="#121212">Dark Gray</option>
+      <option value="#1e1e2f">Midnight Blue</option>
+      <option value="#2c3e50">Blue Gray</option>
+      <option value="#ffffff">White</option>
+      <option value="#f0f0f0">Light Gray</option>
+      <option value="#0d1117">GitHub Dark</option>
+    </select>
+  
+    
+    <label for="text-color-select">Text Color:</label>
+    <select id="text-color-select">
+      <option value="#ffffff">White</option>
+      <option value="#e0e0e0">Light Gray</option>
+      <option value="#000000">Black</option>
+      <option value="#f39c12">Golden Yellow</option>
+      <option value="#1abc9c">Turquoise</option>
+      <option value="#9b59b6">Purple</option>
+    </select>        
+  </div>
+  
+  <header>
+    <h1>Brand Comparison</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="how-gpus-work.html">How GPUs Work</a>
+    <a href="environmental-impact.html">Environmental Impact</a>
+    <a href="brand-comparison.html">Brand Comparison</a>
+    <a href="tips-for-gamers.html">Tips for Gamers</a>
+    <a href="future-outlook.html">Future Outlook</a>
+  </nav>
+  
+  <main>
+    <h2>NVIDIA</h2>
+    <p>
+      NVIDIA is widely recognized as the market leader in high-performance GPUs, particularly in the gaming and professional graphics sectors. Its GeForce RTX series, especially the 30 and 40 generations, introduced groundbreaking features like real-time ray tracing and Deep Learning Super Sampling (DLSS). These technologies have set new standards for visual fidelity and AI-enhanced rendering.
+    </p>
+    <p>
+      However, this performance comes at a cost: many of NVIDIA’s high-end cards, such as the RTX 4090, can draw over 450 watts under peak loads. This makes them some of the most power-hungry consumer GPUs ever produced. In response, NVIDIA has made significant investments in AI-based rendering, which allows for reduced workload through smart upscaling—saving energy while maintaining quality.
+    </p>
+    <p>
+      From a sustainability perspective, NVIDIA has pledged to reach net-zero emissions by 2040. They’ve also introduced greener packaging and implemented responsible sourcing initiatives for their supply chain, but much of their focus remains on high-performance segments rather than energy efficiency for everyday users.
+  
+    </p>
+  
+    <h2>AMD</h2>
+    <p>
+      AMD has made substantial progress in the GPU market with its Radeon RX series and the introduction of the RDNA and RDNA 2/3 architectures. These architectures emphasize efficiency, particularly in mid-range cards where AMD frequently outperforms NVIDIA in performance-per-watt.
+    </p>
+    <p>
+      AMD’s open-source approach has also earned it praise in the Linux and developer communities. With tools like AMDGPU and ROCm, the company supports software transparency, which encourages sustainable innovation across platforms. Furthermore, AMD often offers compelling GPUs at more accessible price points, making energy-efficient gaming more attainable for a broader audience.
+    </p>
+    <p>
+      In terms of environmental action, AMD has set sustainability goals to reduce its greenhouse gas emissions per product by 50% by 2030. It also publishes annual environmental reports detailing efforts in packaging, recycling, and manufacturing.
+  
+    </p>
+  
+    <h2>Intel</h2>
+    <p>
+      Intel, a longtime CPU giant, has recently entered the discrete GPU market with its Arc series. Although still in its early stages compared to AMD and NVIDIA, Intel’s approach is unique. Their focus is on tight integration between CPUs and GPUs, which may result in improved overall system efficiency—especially in laptops and entry-level gaming desktops.
+    </p>
+    <p>
+      While Arc GPUs may not yet match the raw power of NVIDIA or AMD, they show promise for users prioritizing balanced performance and sustainability. Intel has also been one of the more transparent companies in terms of environmental impact, with clear goals for achieving net-zero greenhouse gas emissions across its global operations by 2040.
+    </p>
+    <p>
+      Intel’s entry into the GPU market adds valuable competition, pushing the industry toward better performance and greener practices across all tiers.
+  
+    </p>
+  
+    <h2>Sustainability Comparison</h2>
+    <ul>
+      <li><strong>Best Power Efficiency:</strong> AMD generally leads in the mid-range market with its RDNA architecture, while NVIDIA shines at the high-end thanks to DLSS and AI-enhanced rendering.</li>
+      <li><strong>Recyclability Programs:</strong> All three brands offer hardware take-back and recycling programs, although the availability and scope vary by region and partner retailers.</li>
+      <li><strong>Open-Source Contributions:</strong> AMD is the clear leader here, supporting a variety of open software tools and drivers, especially for Linux-based platforms.</li>
+      <li><strong>Transparency & Reporting:</strong> Intel stands out with its detailed sustainability reports and early net-zero commitments.</li>
+      <li><strong>Eco-Friendly Packaging:</strong> All three companies have made improvements in packaging by reducing plastic, using recycled materials, and minimizing excess volume.</li>
+    </ul>
+  </main>
+  <footer>
+    &copy; 2025 Seminar Project – All rights reserved. Maurice Oehrl, Phillip E. Bock and Samuel Möller.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
