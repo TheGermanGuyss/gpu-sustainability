@@ -234,13 +234,16 @@ footer {
   }
 
   .settings-dropdown {
-    width: 90%;
-    right: 5%;
-    top: 60px;
-    max-width: 100vw;
-    box-sizing: border-box;
-    padding: 10px;
-  }
+  position: absolute;
+  left: 50%;
+  top: 60px;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  padding: 10px;
+  z-index: 999;
+}
 
   .settings-dropdown select,
   .settings-dropdown input[type="color"] {
