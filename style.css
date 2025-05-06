@@ -48,6 +48,7 @@ nav {
     text-align: center;
     padding: 1rem;
     border-radius: 5px;
+    position: relative;
 }
 
 nav a {
@@ -190,6 +191,7 @@ footer {
 
     nav {
         text-align: left;
+        position: relative;
     }
 
     nav a {
