@@ -200,6 +200,10 @@ footer {
     box-sizing: border-box;
   }
 
+  h1, h2, h3 {
+    margin-top: 2rem;
+  }
+
   nav {
     text-align: left;
     padding: 1rem;
@@ -212,7 +216,6 @@ footer {
 
   header,
   footer {
-    margin-top: 2rem;
     padding: 1rem;
     text-align: center;
     max-width: 100%;
@@ -231,12 +234,15 @@ footer {
     right: 10px;
     font-size: 30px;
     padding: 10px;
-    position: absolute;
     z-index: 1000;
   }
 
+  .settings-container {
+    position: relative;
+  }
+
   .settings-dropdown {
-  position: relative;
+  position: absolute;
   left: 50%;
   top: 60px;
   transform: translateX(-50%);
