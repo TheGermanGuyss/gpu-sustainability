@@ -195,7 +195,7 @@ footer {
   @media (max-width: 768px) {
   main {
     padding: 1rem;
-    padding-bottom: 4rem;
+    padding-bottom: 8rem;
     box-sizing: border-box;
   }
 
