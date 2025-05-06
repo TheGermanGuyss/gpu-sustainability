@@ -234,7 +234,7 @@ footer {
   }
 
   .settings-dropdown {
-  position: absolute;
+  position: relative;
   left: 50%;
   top: 60px;
   transform: translateX(-50%);
