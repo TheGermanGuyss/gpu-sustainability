@@ -200,8 +200,10 @@ footer {
     box-sizing: border-box;
   }
 
-  h1, h2, h3 {
-    margin-top: 4rem;
+  header h1, header h2, header h3 {
+  margin: 0;
+  padding: 0.5rem 0;
+  color: white;
   }
 
   nav {
@@ -214,18 +216,33 @@ footer {
     margin: 0.3rem 0;
   }
 
-  header,
+  header {
+  padding: 1rem;
+  text-align: center;
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  word-break: break-word;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  color: white;
+  position: relative;
+  z-index: 10;
+  }
+
   footer {
-    padding: 1rem;
-    text-align: center;
-    max-width: 100%;
-    overflow-x: hidden;
-    box-sizing: border-box;
-    word-break: break-word;
-    min-height: 50px;
-    display: block; 
-    visibility: visible;
-    height: auto;
+  padding: 1rem;
+  text-align: center;
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  word-break: break-word;
+  min-height: 50px;
+  background-color: #222;
+  color: #ccc;
   }
 
   .grid-layout main {
