@@ -222,7 +222,7 @@ footer {
     overflow-x: hidden;
     box-sizing: border-box;
     word-break: break-word;
-    min-height: 50px;
+    min-height: 75px;
     display: block; 
   }
 
