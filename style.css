@@ -196,7 +196,7 @@ footer {
   main {
     padding: 1rem;
     padding-top: 2rem;
-    padding-bottom: 8rem;
+    padding-bottom: 4rem;
     box-sizing: border-box;
   }
 
@@ -206,7 +206,7 @@ footer {
 
   nav {
     text-align: left;
-    padding: 1rem;
+    padding: 3rem;
   }
 
   nav a {
@@ -216,7 +216,7 @@ footer {
 
   header,
   footer {
-    padding: 1rem;
+    padding: 3rem;
     text-align: center;
     max-width: 100%;
     overflow-x: hidden;
