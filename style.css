@@ -195,13 +195,13 @@ footer {
  @media (max-width: 768px) {
   main {
     padding: 1rem;
-    padding-top: 2rem;
-    padding-bottom: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 8rem;
     box-sizing: border-box;
   }
 
   h1, h2, h3 {
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
 
   nav {
