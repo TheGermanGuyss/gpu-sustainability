@@ -222,8 +222,10 @@ footer {
     overflow-x: hidden;
     box-sizing: border-box;
     word-break: break-word;
-    min-height: 75px;
+    min-height: 50px;
     display: block; 
+    visibility: visible;
+    height: auto;
   }
 
   .grid-layout main {
