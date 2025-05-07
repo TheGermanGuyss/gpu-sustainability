@@ -192,16 +192,16 @@ footer {
     margin-bottom: 20px;
   }
 
-  @media (max-width: 768px) {
+ @media (max-width: 768px) {
   main {
     padding: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
     box-sizing: border-box;
   }
 
   h1, h2, h3 {
-    margin-top: 6rem;
+    margin-top: 2rem;
   }
 
   nav {
@@ -222,6 +222,8 @@ footer {
     overflow-x: hidden;
     box-sizing: border-box;
     word-break: break-word;
+    min-height: 50px;
+    display: block; 
   }
 
   .grid-layout main {
@@ -242,16 +244,16 @@ footer {
   }
 
   .settings-dropdown {
-  position: absolute;
-  left: 50%;
-  top: 60px;
-  transform: translateX(-50%);
-  width: 90%;
-  max-width: 100vw;
-  box-sizing: border-box;
-  padding: 10px;
-  z-index: 999;
-}
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    padding: 10px;
+    z-index: 999;
+  }
 
   .settings-dropdown select,
   .settings-dropdown input[type="color"] {
